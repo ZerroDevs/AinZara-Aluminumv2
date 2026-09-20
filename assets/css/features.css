@@ -1093,6 +1093,39 @@ body.mobile-nav-locked {
   text-align: center !important;
 }
 
+.az-dev-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #475569 !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.az-dev-link:hover {
+  color: #10b981 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+.az-dev-link .fa-whatsapp {
+  color: #25D366 !important;
+  font-size: 14px;
+}
+
+[data-theme="dark"] .az-dev-link {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="dark"] .az-dev-link:hover {
+  color: #38bdf8 !important;
+}
+
+[data-theme="dark"] .az-dev-link .fa-whatsapp {
+  color: #25D366 !important;
+}
+
 /* Dark Mode Footer Synchronization */
 [data-theme="dark"] #ed-2414697965,
 [data-theme="dark"] .preset-footer-thrud-v3-paint {

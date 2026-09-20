@@ -79,6 +79,7 @@
       "footer_contact": "Contact",
       "footer_back_top": "Back to top",
       "footer_rights": "All Rights Reserved",
+      "footer_made_by": "Made by Osama Abdallatif",
       "brand_name": "AinZara-Aluminum",
 
       // Switcher Button Label
@@ -152,6 +153,7 @@
       "footer_contact": "للتواصل معنا",
       "footer_back_top": "العودة للأعلى",
       "footer_rights": "جميع الحقوق محفوظة",
+      "footer_made_by": "صُنع بواسطة أسامة عبد اللطيف",
       "brand_name": "عين زارة للألمنيوم",
 
       // Switcher Button Label
