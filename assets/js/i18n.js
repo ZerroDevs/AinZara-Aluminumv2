@@ -76,6 +76,8 @@
       "footer_legal": "Legal Notice",
       "footer_privacy": "Privacy Policy",
       "footer_address": "AinZara - Tripoli / Libya",
+      "footer_contact": "Contact",
+      "footer_back_top": "Back to top",
       "footer_rights": "All Rights Reserved",
       "brand_name": "AinZara-Aluminum",
 
@@ -147,6 +149,8 @@
       "footer_legal": "إشعار قانوني",
       "footer_privacy": "سياسة الخصوصية",
       "footer_address": "عين زارة - طرابلس / ليبيا",
+      "footer_contact": "للتواصل معنا",
+      "footer_back_top": "العودة للأعلى",
       "footer_rights": "جميع الحقوق محفوظة",
       "brand_name": "عين زارة للألمنيوم",
 

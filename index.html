@@ -679,13 +679,13 @@
 <div class="ed-element ed-text custom-theme" id="ed-2414698019">
 <p>
 <a data-i18n="footer_legal" href="#legal-notice">
-           Legal Notice
-          </a>
-<p>
-<a data-i18n="footer_privacy" href="#privacy">
-            Privacy Policy
+            Legal Notice
            </a>
 </p>
+<p>
+<a data-i18n="footer_privacy" href="#privacy">
+             Privacy Policy
+            </a>
 </p>
 </div>
 </div>
@@ -693,7 +693,7 @@
 <div class="ed-element ed-container footer-thrud-box" id="ed-2414698022">
 <div class="inner">
 <div class="ed-element ed-headline custom-theme" id="ed-2414698025">
-<h4>
+<h4 data-i18n="footer_contact">
           Contact
          </h4>
 </div>
@@ -759,19 +759,20 @@ info@ainzara-aluminum.ly
 <hr style="background-color:rgb(255,255,255)"/>
 </div>
 <div class="ed-element ed-container flex-align-items-center flex-align-content-center footer-thrud-bar wv-overflow_visible" id="ed-2414698061">
-<div class="inner">
-<div class="ed-element ed-container flex-align-items-center flex-align-content-center" id="ed-2414698064" style="flex-basis:auto">
-<div class="inner">
+<div class="inner" style="flex-direction:row;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
 <div class="ed-element ed-text custom-theme" id="ed-2414698067">
-<p style="text-align:center">
+<p style="text-align:center;margin:0">
           2024
           © <span class="fr-deletable" contenteditable="false" data-bind="customer.company" data-i18n="brand_name">AinZara-Aluminum</span>. <span data-i18n="footer_rights">All Rights Reserved</span>
 </p>
 </div>
+<a href="#" id="az-footer-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="Back to top" title="Back to top">
+<i aria-hidden="true" class="fa-solid fa-chevron-up fa-fw"></i>
+<span data-i18n="footer_back_top">Back to top</span>
+</a>
 </div>
 </div>
-</div>
-</div>
+
 </footer>
 </div>
 <!-- Modular Scripts (Separated for speed and maintainability) -->
@@ -780,6 +781,10 @@ info@ainzara-aluminum.ly
 <script src="assets/js/mobile.js"></script>
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/back-to-top.js"></script>
+
 </body>
+
+
 </html>
 

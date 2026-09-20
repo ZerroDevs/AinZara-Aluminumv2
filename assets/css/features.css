@@ -76,6 +76,40 @@ img {
   height: auto;
 }
 
+/* Accessibility Skip Link: visually hidden unless focused */
+.wv-link-content:not(:focus) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  transform: none !important;
+}
+
+.wv-link-content:focus {
+  position: fixed !important;
+  top: 10px !important;
+  left: 10px !important;
+  z-index: 99999 !important;
+  clip: auto !important;
+  width: auto !important;
+  height: auto !important;
+  transform: none !important;
+  background: var(--az-accent) !important;
+  color: #ffffff !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+}
+
+[dir="rtl"] .wv-link-content:focus {
+  left: auto !important;
+  right: 10px !important;
+}
+
 /* =========================================================
    DARK THEME: Pure White Text & Surface Styling
    ========================================================= */
@@ -191,7 +225,9 @@ img {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
+  right: 0 !important;
   width: 100% !important;
+  max-width: 100% !important;
   z-index: 1000 !important;
   height: 72px !important;
   min-height: 72px !important;
@@ -339,20 +375,24 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 1998;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .mobile-backdrop.is-open {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-drawer {
@@ -368,8 +408,10 @@ img {
   box-shadow: -4px 0 25px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  visibility: hidden;
+  pointer-events: none;
   transform: translateX(100%);
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s ease;
   padding: 24px 20px;
   overflow-y: auto;
 }
@@ -382,6 +424,8 @@ img {
 }
 
 .mobile-drawer.is-open {
+  visibility: visible;
+  pointer-events: auto;
   transform: translateX(0);
 }
 
@@ -471,7 +515,7 @@ body.mobile-nav-locked {
     display: flex !important;
     flex-wrap: wrap !important;
     align-items: flex-start !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
     gap: 12px !important;
     padding: 0 20px !important;
     max-width: 1280px !important;
@@ -629,22 +673,23 @@ body.mobile-nav-locked {
     width: 100% !important;
     max-width: 100% !important;
     float: none !important;
-    height: 160px !important;
+    margin: 0 !important;
+    height: 140px !important;
     border-radius: 8px !important;
     overflow: hidden !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
   }
 }
 
-/* Extra Small Phones (< 400px) */
-@media screen and (max-width: 400px) {
+/* Extra Small Phones (< 320px) */
+@media screen and (max-width: 320px) {
   .ed-gallery-items.v2 {
     grid-template-columns: 1fr !important;
-    gap: 12px !important;
+    gap: 10px !important;
   }
 
   .ed-gallery-items.v2 li.ed-gallery-thumb {
-    height: 200px !important;
+    height: 160px !important;
   }
 }
 
@@ -1095,6 +1140,7 @@ body.mobile-nav-locked {
    Mobile Friendly Responsive Breakpoints Across Site
    ========================================================= */
 @media (max-width: 860px) {
+  /* ── Header ── */
   #ed-2414697665,
   .ed-menu.wv-custom,
   #ed-2414697668,
@@ -1118,28 +1164,196 @@ body.mobile-nav-locked {
     object-fit: contain !important;
   }
 
-  /* Hero adjustments */
+  /* ── Hero on Mobile (< 768px) ── */
   #ed-2414698085 {
-    padding-top: 90px !important;
-    padding-bottom: 20px !important;
+    position: relative !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url('../images/hero_bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    height: auto !important;
+    min-height: 480px !important;
+    padding: 90px 20px 36px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    z-index: 2 !important;
   }
 
-  #ed-2414698070 .background,
-  .ed-container.full-width .background {
-    height: 520px !important;
+  #ed-2414698085 > .inner {
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #ed-2414698088 {
+    flex-basis: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Hide separate detached background container on mobile to eliminate all phantom space */
+  #ed-2414698070 {
+    display: none !important;
+  }
+
+  /* Hero text styling */
+  #ed-2414698085 h1 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
+    font-size: clamp(22px, 6vw, 32px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 16px !important;
+    text-align: center !important;
+  }
+
+  #ed-2414698085 p {
+    color: rgba(255, 255, 255, 0.95) !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.55) !important;
+    font-size: clamp(14px, 3.8vw, 16px) !important;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+  }
+
+  #ed-2414698085 .button {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 48px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  #ed-2414698094, #ed-2414698100 {
+    display: none !important;
   }
 
   h1 {
-    font-size: clamp(24px, 6vw, 36px) !important;
-    line-height: 1.3 !important;
+    font-size: clamp(22px, 6vw, 32px) !important;
+    line-height: 1.25 !important;
   }
 
   h2 {
-    font-size: clamp(20px, 5vw, 30px) !important;
+    font-size: clamp(19px, 5vw, 26px) !important;
     line-height: 1.3 !important;
   }
 
-  /* Footer mobile stack */
+  h3 {
+    font-size: clamp(16px, 4.5vw, 22px) !important;
+  }
+
+  /* ── About Section: kill giant spacers and tighten layout ── */
+  #ed-2414697812,
+  .preset-columns-two-v2-paint {
+    padding: 36px 0 !important;
+  }
+
+  #ed-2414697812 > .inner,
+  .preset-columns-two-v2-paint > .inner {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 16px !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+  }
+
+  #ed-2414697815,
+  #ed-2414697821,
+  .preset-columns-two-v2-paint > .inner > .columns-box {
+    margin: 0 0 20px 0 !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  #ed-2414697818 img {
+    width: 100% !important;
+    height: 240px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  #ed-2414697827,
+  #ed-2414697833,
+  #ed-2414697839 {
+    display: none !important;
+  }
+
+  #ed-2414697824 h2 {
+    margin-bottom: 12px !important;
+    text-align: center !important;
+  }
+
+  #ed-2414697830 p,
+  #ed-2414697836 p {
+    text-align: center !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 12px !important;
+  }
+
+  [dir="rtl"] #ed-2414697824 h2,
+  [dir="rtl"] #ed-2414697830 p,
+  [dir="rtl"] #ed-2414697836 p {
+    text-align: right !important;
+  }
+
+  /* ── Services Section ── */
+  #ed-2414697671 > .inner {
+    padding-top: 32px !important;
+    padding-bottom: 16px !important;
+  }
+
+  /* ── Contact Section ── */
+  #contact {
+    padding: 32px 16px !important;
+  }
+
+  #ed-2414697914 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #ed-2414697926 p {
+    margin-bottom: 4px !important;
+    text-align: center !important;
+  }
+
+  #ed-2414697929, #ed-2414697935 {
+    display: none !important;
+  }
+
+  #ed-2414697932 h2 {
+    margin-bottom: 20px !important;
+    font-size: clamp(20px, 5.5vw, 26px) !important;
+    text-align: center !important;
+  }
+
+  .preset-contact-form-v3-paint form input,
+  .preset-contact-form-v3-paint form textarea {
+    font-size: 16px !important;
+    border-radius: 8px !important;
+    padding: 12px 14px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .preset-contact-form-v3-paint form button[type="submit"] {
+    width: 100% !important;
+    min-height: 48px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+  }
+
+  /* ── Footer: Compact & Clean Mobile Stack ── */
   #ed-2414697965,
   .preset-footer-thrud-v3-paint {
     padding: 24px 0 16px 0 !important;
@@ -1147,20 +1361,135 @@ body.mobile-nav-locked {
 
   .footer-thrud-content > .inner {
     flex-direction: column !important;
-    gap: 18px !important;
+    gap: 0 !important;
     text-align: center !important;
+    align-items: center !important;
+    padding: 0 16px !important;
+  }
+
+  /* Each footer column: auto height, no giant 180px gap */
+  .footer-thrud-box {
+    flex: 0 0 auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 14px 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
+  }
+
+  [data-theme="dark"] .footer-thrud-box {
+    border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .footer-thrud-box:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Hide excessive spacers in footer */
+  .footer-thrud-box .ed-spacer,
+  #ed-2414697977,
+  #ed-2414698004,
+  #ed-2414698016,
+  #ed-2414698028,
+  #ed-2414698034,
+  #ed-2414698037,
+  #ed-2414698055 {
+    display: none !important;
+  }
+
+  .footer-thrud-box h4 {
+    margin-bottom: 8px !important;
+    text-align: center !important;
+  }
+
+  /* Footer Quick Links: show the nav links properly */
+  .footer-thrud-box .ed-menu {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: none !important;
+  }
+
+  .footer-thrud-box .ed-menu ul {
+    justify-content: center !important;
+    gap: 10px 18px !important;
+  }
+
+  .footer-thrud-box p {
+    text-align: center !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* Details box: center the paragraphs */
+  #ed-2414698019 {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px 18px !important;
+  }
+
+  #ed-2414698019 p {
+    margin: 0 !important;
+  }
+
+  /* Footer contact numbers: center them */
+  #ed-2414698031 p {
+    justify-content: center !important;
+    display: flex !important;
     align-items: center !important;
   }
 
-  .footer-thrud-box {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-
-  .footer .preset-social-icons-v3-paint {
+  #ed-2414698031 a[href^="tel"] {
     justify-content: center !important;
   }
+
+  .footer .social-icons-icon,
+  .footer .ed-icon.social-icons-icon,
+  #ed-2414697989 {
+    margin: 6px auto 0 auto !important;
+  }
+
+  /* Footer bar: stack copyright + back-to-top vertically on small screens */
+  #ed-2414698061 > .inner {
+    flex-direction: column !important;
+    gap: 10px !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 16px !important;
+  }
+
+  #az-footer-top-btn {
+    margin: 0 auto !important;
+  }
 }
+
+/* Extra small phones (< 480px) */
+@media (max-width: 480px) {
+  #ed-2414698085 > .inner {
+    padding: 20px 16px !important;
+  }
+
+  /* Contact form full-width inputs */
+  .preset-contact-form-v3-paint form input,
+  .preset-contact-form-v3-paint form textarea {
+    font-size: 16px !important; /* prevents iOS auto-zoom */
+  }
+
+  /* Footer numbers: smaller text so they don't overflow */
+  #ed-2414698031 p,
+  #ed-2414698031 a {
+    font-size: 13px !important;
+  }
+}
+
 
 /* =========================================================
    Footer Icons
