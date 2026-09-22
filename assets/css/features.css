@@ -1572,6 +1572,43 @@ body.mobile-nav-locked {
 [dir="rtl"] .preset-accordion-v3-paint > .inner > .accordion-trigger a {
   text-align: right !important;
 }
+
+/* =========================================================
+   Arabic RTL Hero Fix (visible text on h1 / p / button)
+   ---------------------------------------------------------
+   The hero image block (#ed-2414698070) is absolutely positioned
+   with PHYSICAL offsets (left: 50%; right: 0), so it does NOT flip
+   when dir="rtl". The hero content row (#ed-2414698085 > .inner) is
+   a flex row, which DOES flip, so the text column moved from the
+   left half to the right half - exactly underneath the image block
+   and its white fade (#ed-2414698079). The Arabic hero heading,
+   paragraph and button were therefore painted behind the image and
+   looked "empty".
+   Fix: mirror the image block to the left half (and flip its white
+   fade) so the Arabic text keeps the plain right half.
+   Desktop only: at <=975px the image block is full-width behind the
+   content (z-index: -1) and at <=575px it is display: none.
+   ========================================================= */
+@media screen and (min-width: 976px) {
+
+  /* Hero image block: physical mirror (right half -> left half) */
+  [dir="rtl"] #ed-2414698070 {
+    left: 0;
+    right: 50%;
+  }
+
+  /* White fade that blends the image into the text side, rotated 180deg
+     so it fades towards the right (where the Arabic text now lives). */
+  [dir="rtl"] #ed-2414698079 {
+    background: linear-gradient(260deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 60%) 0% 0% / auto !important;
+  }
+
+  /* Same fade, used on the smaller "hide-lg" overlay */
+  [dir="rtl"] #ed-2414698082 {
+    background: linear-gradient(230deg, rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0) 60%) 0% 0% / auto !important;
+  }
+}
+
 #contact { justify-content: center !important; }
 .contact-section-box { flex-basis: auto !important; }
 
