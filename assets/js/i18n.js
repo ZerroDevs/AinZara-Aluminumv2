@@ -168,6 +168,10 @@
       "cta_call_us": "Call Engineering Team",
       "cta_whatsapp": "WhatsApp Consultation",
 
+      
+      // Meta
+      "meta_desc": "Aluminum & glass manufacturing in Tripoli, Libya - curtain walls, facades, thermal-break windows and doors built to European specifications. Request a free quote.",
+      
       // Badges
       "badge_en13830": "EN 13830",
       "badge_frameless": "Frameless",
@@ -362,6 +366,9 @@
       "cta_call_us": "اتصل بالفريق الهندسي",
       "cta_whatsapp": "استشارة عبر واتساب",
 
+      // Meta
+      "meta_desc": "تصنيع الألمنيوم والزجاج في طرابلس، ليبيا - واجهات الكيرتن وول، النوافذ والأبواب العازلة حرارياً وفق المواصفات الأوروبية. اطلب عرض سعر مجاناً.",
+
       // Badges
       "badge_en13830": "EN 13830",
       "badge_frameless": "بدون إطار",
@@ -434,6 +441,15 @@
     // Document title
     if (dict.page_title) {
       document.title = dict.page_title;
+    }
+    
+    // Meta tags
+    if (dict.meta_desc) {
+      var metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', dict.meta_desc);
+      
+      var ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', dict.meta_desc);
     }
 
     // Translate standard text elements

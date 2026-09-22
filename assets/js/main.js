@@ -220,5 +220,94 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  // ==========================================
+  // 4. Contact Form Handling (Email & WhatsApp)
+  // ==========================================
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    const waBtn = document.getElementById('btn-whatsapp');
+    const formStatus = document.getElementById('form-status');
+    
+    function getFormData() {
+      const inputs = contactForm.querySelectorAll('input:not([type="hidden"]):not([style*="display:none"]), textarea');
+      let name = '';
+      let email = '';
+      let phone = '';
+      let message = '';
+      
+      inputs.forEach(inp => {
+        const ph = (inp.getAttribute('placeholder') || '').toLowerCase();
+        if (ph.includes('name') || ph.includes('الاسم')) name = inp.value.trim();
+        else if (ph.includes('email') || ph.includes('بريد')) email = inp.value.trim();
+        else if (ph.includes('phone') || ph.includes('هاتف')) phone = inp.value.trim();
+        else if (inp.tagName === 'TEXTAREA') message = inp.value.trim();
+      });
+      
+      // Check honeypot
+      const honey = contactForm.querySelector('input[name="_honey"]');
+      if (honey && honey.value.trim() !== '') {
+        return null; // spam detected
+      }
+      
+      return { name, email, phone, message };
+    }
+    
+    function showStatus(text, isError) {
+      if (!formStatus) return;
+      formStatus.style.display = 'block';
+      formStatus.style.backgroundColor = isError ? '#ffebee' : '#e8f5e9';
+      formStatus.style.color = isError ? '#c62828' : '#2e7d32';
+      formStatus.textContent = text;
+      
+      setTimeout(() => {
+        formStatus.style.display = 'none';
+      }, 5000);
+    }
+    
+    // Default Email Fallback via Submit
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = getFormData();
+      if (!data) return; // spam
+      
+      const subject = encodeURIComponent('Website Inquiry from ' + (data.name || 'Visitor'));
+      const body = encodeURIComponent(
+        'Name: ' + data.name + '\n' +
+        'Email: ' + data.email + '\n' +
+        'Phone: ' + data.phone + '\n\n' +
+        'Message:\n' + data.message
+      );
+      
+      window.location.href = 'mailto:info@ainzara-aluminum.ly?subject=' + subject + '&body=' + body;
+      showStatus('Email client opened successfully!', false);
+      contactForm.reset();
+    });
+    
+    // WhatsApp Direct Link
+    if (waBtn) {
+      waBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const data = getFormData();
+        if (!data) return; // spam
+        if (!data.name && !data.phone && !data.message) {
+          showStatus('Please fill in at least some details to send a message.', true);
+          return;
+        }
+        
+        const text = encodeURIComponent(
+          'Hello AinZara-Aluminum, I have an inquiry:\n\n' +
+          'Name: ' + data.name + '\n' +
+          'Email: ' + data.email + '\n' +
+          'Phone: ' + data.phone + '\n\n' +
+          'Message:\n' + data.message
+        );
+        
+        window.open('https://wa.me/218924295050?text=' + text, '_blank');
+        showStatus('Redirecting to WhatsApp...', false);
+        contactForm.reset();
+      });
+    }
+  }
 });
 
