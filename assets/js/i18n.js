@@ -45,7 +45,7 @@
       "service_3_title": "Windows and doors",
       "service_3_desc": "Manufacturing windows and doors with high-quality European-standard aluminum profiles",
 
-      "service_4_title": "Commercial painting",
+      "service_4_title": "Custom Glass",
       "service_4_desc": "We specialize in manufacturing curved glass and all types of glass for balconies, stairs, and glass fences.",
 
       "btn_book_now": "Book Now",
@@ -243,8 +243,8 @@
       "service_3_title": "النوافذ والأبواب",
       "service_3_desc": "تصنيع النوافذ والأبواب بقطاعات ألمنيوم عالية الجودة مطابقة للمواصفات الأوروبية",
 
-      "service_4_title": "أعمال الزجاج والديكور",
-      "service_4_desc": "نختص بتصنيع الزجاج المنحني وجميع أنواع الزجاج للشرفات والسلالم والحواجز الزجاجية.",
+      "service_4_title": "زجاج مخصص",
+      "service_4_desc": "نحن متخصصون في تصنيع الزجاج المنحني وجميع أنواع الزجاج للشرفات والسلالم والأسوار الزجاجية.",
 
       "btn_book_now": "احجز الآن",
 

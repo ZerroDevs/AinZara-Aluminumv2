@@ -52,6 +52,38 @@
   html[dir="rtl"] .services-detailed-grid {
     text-align: center !important;
   }
+
+  /* Fix product badge icons */
+  .ed-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .ed-icon i {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1.2em; /* Ensure it is decently sized */
+  }
+
+  /* Position product badge icons perfectly inside the card */
+  .image-boxes-box {
+    position: relative !important;
+  }
+  .image-boxes-box .ed-icon {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    transform: none !important;
+    margin: 0 !important;
+    border-radius: 8px !important;
+    z-index: 10 !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  html[dir="rtl"] .image-boxes-box .ed-icon {
+    right: auto !important;
+    left: 15px !important;
+  }
 </style>
 <meta content="Aluminum &amp; glass manufacturing in Tripoli, Libya - curtain walls, facades, thermal-break windows and doors built to European specifications. Request a free quote." name="description"/>
 <meta content="website" property="og:type"/>
@@ -401,7 +433,7 @@
 <figure class="ed-element ed-image" id="ed-2414697785">
 <img alt="AinZara Aluminum - Img_5" data-src="assets/images/img_5.jpeg" decoding="async" loading="lazy" src="assets/images/img_5.jpeg" style="object-fit:cover"/>
 </figure>
-<figure class="ed-element ed-icon" id="ed-2414697788"><i aria-hidden="true" class="fa-solid fa-paint-roller fa-fw"></i></figure>
+<figure class="ed-element ed-icon" id="ed-2414697788"><i aria-hidden="true" class="fa-solid fa-layer-group fa-fw"></i></figure>
 <div class="ed-element ed-container" id="ed-2414697791">
 <div class="inner">
 <div class="ed-element ed-spacer" id="ed-2414697794">
