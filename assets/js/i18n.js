@@ -166,7 +166,44 @@
       "cta_ready_title": "Ready to elevate your building facade?",
       "cta_ready_desc": "Contact our engineering team today for technical consultation, system selection, and tailored quotations.",
       "cta_call_us": "Call Engineering Team",
-      "cta_whatsapp": "WhatsApp Consultation"
+      "cta_whatsapp": "WhatsApp Consultation",
+
+      // Badges
+      "badge_en13830": "EN 13830",
+      "badge_frameless": "Frameless",
+      "badge_fire_rated": "Fire Rated",
+      "badge_inox316": "Inox 316",
+      "badge_solar_control": "Solar Control",
+      "badge_lift_slide": "Lift & Slide",
+      "badge_turnkey": "Turnkey",
+      "badge_commercial": "Commercial",
+
+      // Gallery Items
+      "gallery_item_curtain_wall_title": "Curtain Wall",
+      "gallery_item_curtain_wall_desc": "High-Rise Commercial Glass Tower",
+      "gallery_item_structural_glazing_title": "Structural Glazing",
+      "gallery_item_structural_glazing_desc": "Seamless Glass Skin Architecture",
+      "gallery_item_cladding_title": "Cladding / Alucobond",
+      "gallery_item_cladding_desc": "Contemporary Composite Facade",
+      "gallery_item_residential_title": "Residential Building",
+      "gallery_item_residential_desc": "Modern Apartment Complex Facade",
+      "gallery_item_spider_title": "Spider Glass",
+      "gallery_item_spider_desc": "Grand Entrance Point-Fixed Wall",
+      "gallery_item_louvers_title": "Sun Louvers",
+      "gallery_item_louvers_desc": "Aerofoil Solar Shading Blades",
+      "gallery_item_showroom_title": "Commercial Showroom",
+      "gallery_item_showroom_desc": "Expansive Panoramic Storefront",
+      "gallery_item_office_title": "Office Complex",
+      "gallery_item_office_desc": "Geometric Glass & Aluminum Envelope",
+      "gallery_item_engineering_title": "Engineering Detail",
+      "gallery_item_engineering_desc": "Thermal Break Polyamide Joinery",
+
+      // Index Teaser
+      "services_teaser_badge": "Facade Engineering & Implementation",
+      "services_teaser_title": "Discover Our Extensive Architecture Works",
+      "services_teaser_desc": "From cutting-edge curtain walls and thermal break windows to monumental spider glass systems, we adhere to top-tier European standards in all our facade engineering projects.",
+      "services_teaser_btn_1": "View All Services",
+      "services_teaser_btn_2": "Speak with our Team"
     },
     ar: {
       // Document
@@ -323,7 +360,44 @@
       "cta_ready_title": "هل ترغب في تنفيذ واجهة عصرية ومميزة لمشروعك؟",
       "cta_ready_desc": "تواصل مع فريقنا الهندسي اليوم للحصول على الاستشارة الفنية، واختيار أفضل أنظمة الواجهات، وتحديد عروض الأسعار.",
       "cta_call_us": "اتصل بالفريق الهندسي",
-      "cta_whatsapp": "استشارة عبر واتساب"
+      "cta_whatsapp": "استشارة عبر واتساب",
+
+      // Badges
+      "badge_en13830": "EN 13830",
+      "badge_frameless": "بدون إطار",
+      "badge_fire_rated": "مقاوم للحريق",
+      "badge_inox316": "Inox 316",
+      "badge_solar_control": "تحكم حراري",
+      "badge_lift_slide": "رفع وسحب",
+      "badge_turnkey": "تسليم مفتاح",
+      "badge_commercial": "تجاري",
+
+      // Gallery Items
+      "gallery_item_curtain_wall_title": "كيرتن وول",
+      "gallery_item_curtain_wall_desc": "برج زجاجي تجاري شاهق",
+      "gallery_item_structural_glazing_title": "زجاج استركشر",
+      "gallery_item_structural_glazing_desc": "واجهة زجاجية معمارية ملساء",
+      "gallery_item_cladding_title": "كلادينج / ألوكوبوند",
+      "gallery_item_cladding_desc": "واجهة عصرية من الألمنيوم المركب",
+      "gallery_item_residential_title": "مبنى سكني",
+      "gallery_item_residential_desc": "واجهة مجمع سكني حديث",
+      "gallery_item_spider_title": "زجاج سبايدر",
+      "gallery_item_spider_desc": "واجهة مدخل رئيسي بتثبيت نقطي",
+      "gallery_item_louvers_title": "كاسرات الشمس",
+      "gallery_item_louvers_desc": "شفرات تظليل هوائية",
+      "gallery_item_showroom_title": "معرض تجاري",
+      "gallery_item_showroom_desc": "واجهة عرض بانورامية واسعة",
+      "gallery_item_office_title": "مجمع مكاتب",
+      "gallery_item_office_desc": "غلاف هندسي من الزجاج والألمنيوم",
+      "gallery_item_engineering_title": "تفاصيل هندسية",
+      "gallery_item_engineering_desc": "قطاعات معزولة بجسور البولي أميد",
+
+      // Index Teaser
+      "services_teaser_badge": "هندسة وتنفيذ الواجهات",
+      "services_teaser_title": "اكتشف أعمالنا المعمارية الشاملة",
+      "services_teaser_desc": "من الواجهات الزجاجية المستمرة (الكيرتن وول) المتطورة والنوافذ العازلة حرارياً إلى أنظمة الزجاج النقطي (السبايدر) الضخمة، نلتزم بأعلى المعايير الأوروبية في كافة مشاريع هندسة الواجهات لدينا.",
+      "services_teaser_btn_1": "عرض كافة الخدمات",
+      "services_teaser_btn_2": "تحدث مع فريقنا"
     }
   };
 

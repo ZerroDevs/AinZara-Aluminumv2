@@ -2407,4 +2407,8 @@ body.mobile-nav-locked {
   transform: translateY(-2px);
 }
 
-
+/* RTL Adjustments for Breadcrumb */
+[dir="rtl"] .az-breadcrumb .fa-chevron-right {
+  transform: scaleX(-1);
+  display: inline-block;
+}
