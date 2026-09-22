@@ -83,7 +83,90 @@
       "brand_name": "AinZara-Aluminum",
 
       // Switcher Button Label
-      "lang_switch_label": "العربية"
+      "lang_switch_label": "العربية",
+
+      // Services & Facades Page Dedicated Keys
+      "nav_home": "Home",
+      "nav_facades": "Facade Systems",
+      "services_page_title": "Services & Architectural Facade Systems | AinZara-Aluminum",
+      "services_hero_tag": "Advanced Engineering & Fabrication",
+      "services_hero_title": "Complete Aluminum & Glass Facade Systems for Modern Architecture",
+      "services_hero_desc": "From high-rise curtain walls to structural glazing, thermal break joinery, and architectural cladding, AinZara-Aluminum delivers turnkey facade engineering built to European standards.",
+      "services_cta_quote": "Request Quotation",
+      "services_cta_view_gallery": "View Facades Gallery",
+      "services_breadcrumb_home": "Home",
+      "services_breadcrumb_services": "Services & Facades",
+
+      "svc_curtain_wall_title": "Curtain Wall Systems",
+      "svc_curtain_wall_desc": "High-performance unitized and stick curtain wall systems providing panoramic exterior views, unmatched wind load resistance, and premium thermal and acoustic insulation.",
+      "svc_curtain_wall_feat1": "Stick & Unitized prefabricated systems",
+      "svc_curtain_wall_feat2": "Double & triple glazed thermal insulation",
+      "svc_curtain_wall_feat3": "European certified alloy (AW 6063 T6)",
+
+      "svc_structural_glazing_title": "Structural Silicone Glazing",
+      "svc_structural_glazing_desc": "Sleek frameless glass exterior facades bonded with high-grade structural silicone for a flush, seamless architectural look.",
+      "svc_structural_glazing_feat1": "Four-sided and two-sided structural silicone glazing",
+      "svc_structural_glazing_feat2": "High UV and extreme weather resistance",
+      "svc_structural_glazing_feat3": "Integrated concealed openable sashes",
+
+      "svc_cladding_title": "Aluminum Composite Cladding (Alucobond)",
+      "svc_cladding_desc": "Fire-rated composite panels and ventilated facades for exterior building cladding with contemporary finishes, long-lasting durability, and thermal barrier backing.",
+      "svc_cladding_feat1": "Fire-retardant core panels (Class A2 / B1)",
+      "svc_cladding_feat2": "Ventilated facade substructure systems",
+      "svc_cladding_feat3": "Wide variety of PVDF & metallic colors",
+
+      "svc_spider_title": "Spider Glass Systems",
+      "svc_spider_desc": "Point-fixed architectural glass facade systems utilizing 316 stainless steel spider fittings and glass fins, ideal for monumental entrance halls, atrium lobbies, and show facades.",
+      "svc_spider_feat1": "Marine-grade AISI 316 stainless steel spiders",
+      "svc_spider_feat2": "Laminated & tempered safety glass",
+      "svc_spider_feat3": "Maximum light transmission & transparency",
+
+      "svc_louvers_title": "Architectural Sun Louvers & Shading",
+      "svc_louvers_desc": "Aerodynamic aluminum sun blades and louvers designed to reduce solar heat gain, optimize natural daylighting, and create dynamic building envelope aesthetics.",
+      "svc_louvers_feat1": "Aerofoil, box, and continuous louver profiles",
+      "svc_louvers_feat2": "Significant reduction in building cooling costs",
+      "svc_louvers_feat3": "Custom powder-coated architectural finishes",
+
+      "svc_thermal_doors_title": "Thermal Break Windows & Large Sliding Doors",
+      "svc_thermal_doors_desc": "Heavy-duty European profile systems with polyamide thermal insulation strips, tilt-and-turn mechanisms, and heavy lift-and-slide panoramic patio doors.",
+      "svc_thermal_doors_feat1": "Polyamide thermal barrier preventing heat transfer",
+      "svc_thermal_doors_feat2": "Multi-point perimeter locking hardware",
+      "svc_thermal_doors_feat3": "Smooth sliding for oversized heavy glass panes",
+
+      "svc_custom_glass_title": "Architectural Glass Processing & Balustrades",
+      "svc_custom_glass_desc": "State-of-the-art tempering, laminating, double-glazing, curved glass production, and frameless glass balustrades for balconies and stairs.",
+      "svc_custom_glass_feat1": "CNC glass cutting, edgework & polishing",
+      "svc_custom_glass_feat2": "Acoustic & security laminated glass",
+      "svc_custom_glass_feat3": "Frameless glass balustrades & railings",
+
+      "svc_engineering_title": "Engineering Studies, Fabrication & Installation",
+      "svc_engineering_desc": "Complete engineering cycle from 3D architectural shop drawings, static wind load calculations, CNC automated fabrication to expert certified installation.",
+      "svc_engineering_feat1": "Structural & thermal simulation calculations",
+      "svc_engineering_feat2": "High-precision CNC profile machining",
+      "svc_engineering_feat3": "Strict quality control & on-site warranty",
+
+      "gallery_section_badge": "Project Showcase",
+      "gallery_section_title": "Facade Systems & Architectural Implementations",
+      "gallery_section_subtitle": "Explore our architectural facade systems installed with European specifications and superior finishing.",
+      "gallery_filter_all": "All Facades",
+      "gallery_filter_curtain": "Curtain Walls",
+      "gallery_filter_structural": "Structural Glazing",
+      "gallery_filter_cladding": "Cladding & Louvers",
+      "gallery_filter_residential": "Residential & Towers",
+
+      "spec_1_title": "Thermal Insulation",
+      "spec_1_desc": "Uw down to 1.1 W/m²K with European thermal break",
+      "spec_2_title": "Acoustic Attenuation",
+      "spec_2_desc": "Sound reduction Rw up to 45 dB for tranquil interiors",
+      "spec_3_title": "Wind & Weather Proof",
+      "spec_3_desc": "Engineered to withstand extreme wind loads & harsh weather",
+      "spec_4_title": "European Certification",
+      "spec_4_desc": "EN ISO 12567, EN 13830 & CE certified quality",
+
+      "cta_ready_title": "Ready to elevate your building facade?",
+      "cta_ready_desc": "Contact our engineering team today for technical consultation, system selection, and tailored quotations.",
+      "cta_call_us": "Call Engineering Team",
+      "cta_whatsapp": "WhatsApp Consultation"
     },
     ar: {
       // Document
@@ -157,7 +240,90 @@
       "brand_name": "عين زارة للألمنيوم",
 
       // Switcher Button Label
-      "lang_switch_label": "English"
+      "lang_switch_label": "English",
+
+      // Services & Facades Page Dedicated Keys (Arabic)
+      "nav_home": "الرئيسية",
+      "nav_facades": "أنظمة الواجهات",
+      "services_page_title": "خدماتنا وأنظمة الواجهات المعمارية | عين زارة للألمنيوم",
+      "services_hero_tag": "هندسة متقدمة وتصنيع احترافي",
+      "services_hero_title": "حلول وأنظمة الواجهات الزجاجية والألمنيوم المتكاملة للمباني الحديثة",
+      "services_hero_desc": "من الواجهات الزجاجية المستمرة (الكيرتن وول) للأبراج والمباني إلى الزجاج الإنشائي، والكسوات المعمارية (الكلادينج)، والأبواب والنوافذ العازلة حرارياً، تقدم عين زارة للألمنيوم حلولاً متكاملة وفق أعلى المواصفات الأوروبية.",
+      "services_cta_quote": "طلب عرض سعر",
+      "services_cta_view_gallery": "مشاهدة معرض الواجهات",
+      "services_breadcrumb_home": "الرئيسية",
+      "services_breadcrumb_services": "خدماتنا والواجهات",
+
+      "svc_curtain_wall_title": "الواجهات الزجاجية المستمرة (الكيرتن وول)",
+      "svc_curtain_wall_desc": "أنظمة الواجهات الزجاجية المستمرة (Unitized & Stick Systems) التي تمنح المباني إطلالات بانورامية فخمة مع مقاومة فائقة لضغط الرياح وعزل حراري وصوتي عالي الكفاءة.",
+      "svc_curtain_wall_feat1": "أنظمة كيرتن وول مجزأة ومجمعة مسبقاً",
+      "svc_curtain_wall_feat2": "زجاج مزدوج وثلاثي عازل للحرارة والصوت",
+      "svc_curtain_wall_feat3": "سبائك ألمنيوم معتمدة وفق المعايير الأوروبية (AW 6063 T6)",
+
+      "svc_structural_glazing_title": "واجهات الزجاج الإنشائي (Structural Glazing)",
+      "svc_structural_glazing_desc": "واجهات زجاجية ملساء ومستوية بدون فواصل ألمنيوم بارزة من الخارج، مثبتة بالسليكون الإنشائي عالي المتانة لمظهر هندسي عصري وأنيق.",
+      "svc_structural_glazing_feat1": "تثبيت هيكلي ثنائي ورباعي الأطراف",
+      "svc_structural_glazing_feat2": "مقاومة فائقة للأشعة فوق البنفسجية والعوامل الجوية",
+      "svc_structural_glazing_feat3": "إمكانية دمج فتحات تهوية مخفية تماماً",
+
+      "svc_cladding_title": "كسوات الألمنيوم والكلادينج المعماري",
+      "svc_cladding_desc": "ألواح الألمنيوم المركبة المقاومة للحريق والواجهات المهواة لتغطية واجهات المباني بأحدث التشطيبات العصرية مع حماية هيكل المبنى والعزل الحراري.",
+      "svc_cladding_feat1": "ألواح مقاومة لانتشار الحريق بمواصفات عالمية (Class A2 / B1)",
+      "svc_cladding_feat2": "أنظمة تثبيت خلفية مهواة تمنع الرطوبة",
+      "svc_cladding_feat3": "تنوع كبير في ألوان الـ PVDF والتشطيبات المعدنية",
+
+      "svc_spider_title": "واجهات الزجاج العنكبوتي (Spider Glass)",
+      "svc_spider_desc": "أنظمة تثبيت الزجاج النقطي بإكسسوارات إستانلس ستيل (Spider Fittings) مع زعانف زجاجية، مثالية للمداخل الفاخرة والمجمعات والمباني الراقية.",
+      "svc_spider_feat1": "إكسسوارات سبايدر من الستانلس ستيل المقاوم للصدأ 316",
+      "svc_spider_feat2": "زجاج أمان مقسى ومصفح عالي القوة",
+      "svc_spider_feat3": "أقصى درجات الشفافية ونفاذ الإضاءة الطبيعية",
+
+      "svc_louvers_title": "كاسرات الشمس ولوفرات الألمنيوم المعمارية",
+      "svc_louvers_desc": "شفرات ولوفرات ألمنيوم هوائية وثابتة ومتحركة لتقليل الحمل الحراري الشمسي وتوفير الطاقة مع إضفاء لمسة جمالية ديناميكية للمبنى.",
+      "svc_louvers_feat1": "قطاعات إيروفويل ومستطيلة ومتصلة",
+      "svc_louvers_feat2": "تخفيض استهلاك الطاقة والتكييف بشكل ملحوظ",
+      "svc_louvers_feat3": "دهانات إلكتروستاتيكية معمارية مقاومة للتقلبات المناخية",
+
+      "svc_thermal_doors_title": "الأبواب والنوافذ العازلة حرارياً والأنظمة السحابة الكبيرة",
+      "svc_thermal_doors_desc": "قطاعات ألمنيوم أوروبية معزولة بجسور البولي أميد الحرارية، وآليات رفع وسحب (Lift & Slide) للأبواب العملاقة ونوافذ قلاب ومفصلي محكمة الإغلاق.",
+      "svc_thermal_doors_feat1": "جسر بولي أميد عازل يمنع انتقال الحرارة والبرودة",
+      "svc_thermal_doors_feat2": "إكسسوارات إغلاق محكمة متعددة النقاط",
+      "svc_thermal_doors_feat3": "حركة انسيابية فائقة للألواح الزجاجية الكبيرة",
+
+      "svc_custom_glass_title": "تصنيع وتشكيل الزجاج المعماري والدرابزينات",
+      "svc_custom_glass_desc": "خطوط إنتاج متطورة لمعالجة وتقسية وتصفيح الزجاج، والزجاج المزدوج المنحني، والدرابزينات الزجاجية ذاتية التثبيت للشرفات والسلالم.",
+      "svc_custom_glass_feat1": "قص وشطف الزجاج بدقة CNC عالية",
+      "svc_custom_glass_feat2": "زجاج مصفح عازل للصوت وضد الكسر",
+      "svc_custom_glass_feat3": "درابزينات زجاجية بدون إطارات للشرفات والدرج",
+
+      "svc_engineering_title": "الدراسات الهندسية والتصنيع والتركيب الميداني",
+      "svc_engineering_desc": "دورة عمل هندسية متكاملة تشمل المخططات التنفيذية، وحسابات أحمال الرياح، والتصنيع الآلي الدقيق، والتركيب الميداني بإشراف مهندسين مختصين.",
+      "svc_engineering_feat1": "حسابات إنشائية ومحاكاة للعزل الحراري",
+      "svc_engineering_feat2": "تشغيل وتجهيز القطاعات بماكينات CNC الدقيقة",
+      "svc_engineering_feat3": "رقابة جودة صارمة وضمان معتمد على الأعمال",
+
+      "gallery_section_badge": "معرض الأعمال",
+      "gallery_section_title": "معرض صور واجهات المباني والأنظمة المعمارية",
+      "gallery_section_subtitle": "استكشف أحدث مشاريعنا وواجهات المباني المنفذة بأنظمة الألمنيوم والزجاج وفق أرقى المعايير الهندسية.",
+      "gallery_filter_all": "جميع الواجهات",
+      "gallery_filter_curtain": "واجهات كيرتن وول",
+      "gallery_filter_structural": "زجاج استركشر",
+      "gallery_filter_cladding": "كلادينج ولوفرات",
+      "gallery_filter_residential": "عمارات وأبراج",
+
+      "spec_1_title": "عزل حراري فائق",
+      "spec_1_desc": "معامل عزل حراري يصل إلى 1.1 W/m²K بجسور حرارية أوروبية",
+      "spec_2_title": "عزل صوتي متقدم",
+      "spec_2_desc": "تخفيض الضوضاء حتى 45 ديسيبل لبيئة هادئة ومريحة",
+      "spec_3_title": "مقاومة الرياح والأمطار",
+      "spec_3_desc": "مصممة لتحمل ضغوط الرياح الشديدة ومقاومة التسريب",
+      "spec_4_title": "مطابقة للمعايير الأوروبية",
+      "spec_4_desc": "مطابقة للمواصفات القياسية EN 13830 وشهادات الجودة",
+
+      "cta_ready_title": "هل ترغب في تنفيذ واجهة عصرية ومميزة لمشروعك؟",
+      "cta_ready_desc": "تواصل مع فريقنا الهندسي اليوم للحصول على الاستشارة الفنية، واختيار أفضل أنظمة الواجهات، وتحديد عروض الأسعار.",
+      "cta_call_us": "اتصل بالفريق الهندسي",
+      "cta_whatsapp": "استشارة عبر واتساب"
     }
   };
 

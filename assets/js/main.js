@@ -173,15 +173,52 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, { passive: true });
 
-    // Attach click listeners to gallery thumbs in active content
-    galleryLinks.forEach(function (link) {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const parentContent = this.closest('.accordion-content');
-        const activeLinks = parentContent ? Array.from(parentContent.querySelectorAll('.ed-gallery-thumb a')) : galleryLinks;
-        const index = activeLinks.indexOf(this);
-        openLightbox(activeLinks, index >= 0 ? index : 0);
+    // Universal click listener for all gallery thumb links
+    document.addEventListener('click', function (e) {
+      const link = e.target.closest('.ed-gallery-thumb a, .facade-gallery-thumb a');
+      if (!link) return;
+      e.preventDefault();
+
+      // Find visible sibling links in the same container or section
+      const galleryContainer = link.closest('.ed-gallery-items, .facade-gallery-grid');
+      let linksToUse = [];
+      if (galleryContainer) {
+        linksToUse = Array.from(galleryContainer.querySelectorAll('.ed-gallery-thumb a, .facade-gallery-thumb:not([style*="display: none"]) a'));
+      }
+      if (!linksToUse || linksToUse.length === 0) {
+        linksToUse = Array.from(document.querySelectorAll('.ed-gallery-thumb a, .facade-gallery-thumb:not([style*="display: none"]) a'));
+      }
+      const index = linksToUse.indexOf(link);
+      openLightbox(linksToUse, index >= 0 ? index : 0);
+    });
+  }
+
+  // ==========================================
+  // 3. Facade Showcase Gallery Filtering (Services Page)
+  // ==========================================
+  const filterButtons = document.querySelectorAll('.facade-filter-btn');
+  const facadeItems = document.querySelectorAll('.facade-gallery-item');
+
+  if (filterButtons.length > 0 && facadeItems.length > 0) {
+    filterButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const filter = this.getAttribute('data-filter');
+
+        filterButtons.forEach(function (b) { b.classList.remove('active'); });
+        this.classList.add('active');
+
+        facadeItems.forEach(function (item) {
+          const category = item.getAttribute('data-category') || '';
+          if (filter === 'all' || category.split(' ').includes(filter)) {
+            item.style.display = '';
+            item.classList.remove('is-hidden');
+          } else {
+            item.style.display = 'none';
+            item.classList.add('is-hidden');
+          }
+        });
       });
     });
   }
 });
+
