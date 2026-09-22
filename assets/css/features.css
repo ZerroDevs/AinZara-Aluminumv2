@@ -1637,3 +1637,22 @@ body.mobile-nav-locked {
   margin-left: 0 !important;
 }
 
+/* =========================================================
+   RTL / Arabic Footer Contact Fix: phone numbers were shown
+   mirrored, e.g. "+218 92 429 5050" rendered as "5050 429 92 218+".
+   The footer numbers are written as space separated digit groups, and
+   inside an RTL paragraph those spaces take the RTL base direction, so
+   the groups were laid out from right to left (the "+" ended up on the
+   wrong side too - which looks like the digits are "flipped/rotated").
+   The contact lines are therefore isolated as LTR runs, so phone
+   numbers and the e-mail address always read exactly as typed, while
+   the lines themselves stay right aligned in the Arabic footer.
+   The address line is skipped (`:not([data-i18n])`): its Arabic text
+   must keep the normal RTL direction.
+   ========================================================= */
+[dir="rtl"] #ed-2414698031 p:not([data-i18n]) {
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: right;
+}
+
