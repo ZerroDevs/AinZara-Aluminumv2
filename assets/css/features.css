@@ -1181,8 +1181,30 @@ body.mobile-nav-locked {
     display: none !important;
   }
 
+  /* Legacy empty Webflow spacer (#ed-2414697659) carries `flex-grow: 1`
+     in style.css, so on phones it swallowed all the free space inside the
+     header and pushed the theme + drawer buttons right next to the logo.
+     Removing it lets `justify-content: space-between` pin .nav-controls
+     to the trailing edge (right in LTR, left in RTL). */
+  #ed-2414697659,
+  .preset-menu-v2-paint .mobile-cont {
+    display: none !important;
+  }
+
   .mobile-menu-btn {
     display: inline-flex !important;
+  }
+
+  /* Keep the header controls flush against the trailing edge even if the
+     legacy spacer markup ever returns. */
+  .nav-controls {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+
+  [dir="rtl"] .nav-controls {
+    margin-left: 0 !important;
+    margin-right: auto !important;
   }
 
   #ed-2414697653 > .inner,
