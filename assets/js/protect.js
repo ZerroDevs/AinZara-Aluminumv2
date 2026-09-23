@@ -32,4 +32,17 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('selectstart', function(e) {
     e.preventDefault();
   });
+
+  // 4. Infinite Debugger Loop (Anti-DevTools)
+  // This function sets up a recursive debugger call. If DevTools is closed, the debugger statement is ignored and has no performance impact.
+  // If DevTools is open, it pauses execution and makes DevTools extremely difficult to use.
+  (function antiDevTools() {
+    function debuggerLoop() {
+      try {
+        (function() { return false; }['constructor']('debugger')());
+      } catch (err) {}
+      setTimeout(debuggerLoop, 50);
+    }
+    debuggerLoop();
+  })();
 });
