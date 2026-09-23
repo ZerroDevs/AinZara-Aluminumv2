@@ -1222,7 +1222,7 @@ body.mobile-nav-locked {
   /* ── Hero on Mobile (< 768px) ── */
   #ed-2414698085 {
     position: relative !important;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url('../images/hero_bg.jpg') !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url('../images/hero_bg.webp') !important;
     background-size: cover !important;
     background-position: center center !important;
     height: auto !important;

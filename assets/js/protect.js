@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   // 1. Disable Right-Click
-  document.addEventListener('contextmenu', function(e) {
+ /* document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
-  });
+  }); */
 
   // 2. Disable Keyboard Shortcuts (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U)
   document.addEventListener('keydown', function(e) {
@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // 3. Disable Text Selection via JavaScript as a fallback
-  document.addEventListener('selectstart', function(e) {
+ /* document.addEventListener('selectstart', function(e) {
     e.preventDefault();
-  });
+  }); */
 
   // 4. Infinite Debugger Loop (Anti-DevTools)
   // This function sets up a recursive debugger call. If DevTools is closed, the debugger statement is ignored and has no performance impact.
