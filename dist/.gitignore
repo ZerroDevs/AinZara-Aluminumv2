@@ -3,6 +3,4 @@ Python/
 
 # Node
 node_modules/
-package-lock.json
-package.json
-build.js
+dist/
