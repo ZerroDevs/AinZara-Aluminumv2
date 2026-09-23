@@ -1,0 +1,30 @@
+{
+  "name": "ainzara",
+  "version": "1.0.0",
+  "description": "Official modern responsive web presentation for **AinZara Aluminum & Glass**, specializing in architectural facades, curtain walls, high-performance European-standard aluminum windows & doors, and structural glass fabrication based in Tripoli, Libya.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "deploy": "node build.js && gh-pages -d dist -b production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZerroDevs/AinZara-Aluminumv2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ZerroDevs/AinZara-Aluminumv2/issues"
+  },
+  "homepage": "https://github.com/ZerroDevs/AinZara-Aluminumv2#readme",
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "fs-extra": "^11.4.1",
+    "gh-pages": "^6.3.0",
+    "html-minifier-terser": "^7.2.0",
+    "javascript-obfuscator": "^5.8.0"
+  }
+}
