@@ -1156,3 +1156,16 @@ h1, h2, h3, h4, h5, h6,
   font-family: var(--font-display) !important;
   letter-spacing: -0.02em !important;
 }
+
+/* Image Protection & Global Anti-Selection */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
