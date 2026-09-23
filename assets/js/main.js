@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'Message:\n' + data.message
       );
       
-      window.location.href = 'mailto:info@ainzara-aluminum.ly?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:info@ainzara.ly?subject=' + subject + '&body=' + body;
       showStatus('Email client opened successfully!', false);
       contactForm.reset();
     });

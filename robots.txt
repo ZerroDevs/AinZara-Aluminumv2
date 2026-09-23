@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://ainzara-aluminum.ly/sitemap.xml
+Sitemap: https://ainzara.ly/sitemap.xml
