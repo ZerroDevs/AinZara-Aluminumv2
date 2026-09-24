@@ -168,6 +168,11 @@
       "cta_call_us": "Call Engineering Team",
       "cta_whatsapp": "WhatsApp Consultation",
 
+      // 404 Page
+      "page_not_found_title": "404 - Page Not Found",
+      "page_not_found_desc": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+      "back_to_home": "Back to Home",
+
       
       // Meta
       "meta_desc": "Aluminum & glass manufacturing in Tripoli, Libya - curtain walls, facades, thermal-break windows and doors built to European specifications. Request a free quote.",
@@ -365,6 +370,11 @@
       "cta_ready_desc": "تواصل مع فريقنا الهندسي اليوم للحصول على الاستشارة الفنية، واختيار أفضل أنظمة الواجهات، وتحديد عروض الأسعار.",
       "cta_call_us": "اتصل بالفريق الهندسي",
       "cta_whatsapp": "استشارة عبر واتساب",
+
+      // 404 Page
+      "page_not_found_title": "404 - الصفحة غير موجودة",
+      "page_not_found_desc": "قد تكون الصفحة التي تبحث عنها قد أزيلت، أو تغير اسمها، أو غير متاحة مؤقتاً.",
+      "back_to_home": "العودة للرئيسية",
 
       // Meta
       "meta_desc": "تصنيع الألمنيوم والزجاج في طرابلس، ليبيا - واجهات الكيرتن وول، النوافذ والأبواب العازلة حرارياً وفق المواصفات الأوروبية. اطلب عرض سعر مجاناً.",
